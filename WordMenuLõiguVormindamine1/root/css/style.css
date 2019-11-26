@@ -1,0 +1,169 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFC2
+}
+
+/*Global*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Header*/
+header {
+  padding-top: 10px;
+  min-height: 40px;
+  margin-bottom: -20px;
+}
+
+div .counter{
+  width: 70px;
+  height: 30px;
+
+  background-color:#ffffff;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2;
+}
+
+/*div.counter p */
+#counter {
+  font-size: 20px;
+  font-weight: auto;
+  position: absolute;
+}
+
+/*Showcase*/
+#clickable {
+  position: relative;
+  z-index: 1;
+}
+
+
+#clickableImg {
+    min-height: 250px;
+    width: 837px;
+    display: block;
+    margin: 0 auto;
+    background-color: auto;
+  }
+
+.divButton {
+  background-color:#000000;
+  opacity: 0;
+}
+
+.divButton:hover {
+  cursor: pointer;
+  opacity: 0.1;
+}
+
+#question {
+  position: relative;
+  width: 420px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  background-color: auto;
+}
+
+#qBox{
+  position: absolute;
+  border-radius: 15px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  width: 400px;
+  height: auto;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+#happy, #sad{
+  position: absolute;
+  right: -50px;
+  top: -30px;
+  visibility: hidden;
+  z-index: 2;
+}
+
+#qBoxImage{
+  width: 350px;
+  height: auto;
+}
+
+#nextButton, #endModalButton {
+  position: absolute;
+  right: -220px;
+  top: 200px;
+  background-image:url(../images/check.png);
+  background-position: right -20px bottom -23px;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border:0;
+  outline: 0;
+  z-index: 3;
+}
+
+#nextButton, #endModalButton:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+
+
+/*Footer*/
+footer {
+  padding-top: 30px;
+  min-height: 30px;
+}
+
+/*Modals Bootstrap*/
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 20px !important;
+}
+
+.modal-content {
+  /*  border: 5px solid rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);*/
+    border: 10px solid #cccccc;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    border-bottom: 0 none;
+}
+
+.modal-footer {
+    border-top: 0 none;
+}
+
+/*Sellega saab tsentreerida kõike*/
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*If you want to override any default properties in bootstrap you have to make the properties as important.*/
+.btn-outline-secondary {
+    background-color: #cccccc !important;
+    color: #000000 !important;
+}

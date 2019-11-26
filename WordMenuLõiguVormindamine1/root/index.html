@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./scripts/jquery-3.4.1.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <title>MS Word Ribbon</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="counter">
+          <p id="counter"></p>
+        </div>
+      </div>
+    </header>
+
+    <section id=clickable>
+      <div class="container">
+        <div id="clickableImg" style="position: relative;">
+          <img src="./images/wordRibbon.jpg" alt="MS Word Ribbon" style="position: absolute; top:0px;left:0px;">
+          <div class="divButton" id="vasakjoondus" onclick="quiz(this)" style="height:30px;width:30px;position:absolute;left:556px;top:135px;"></div>
+          <div class="divButton" id="keskjoondus" onclick="quiz(this)" style="height:30px;width:30px;position:absolute;left:585px;top:135px;"></div>
+          <div class="divButton" id="paremjoondus" onclick="quiz(this)" style="height:30px;width:30px;position:absolute;left:616px;top:135px;"></div>
+          <div class="divButton" id="rööpjoondus" onclick="quiz(this)" style="height:30px;width:30px;position:absolute;left:641px;top:135px;"></div>
+          <div class="divButton" id="reasamm" onclick="quiz(this)" style="height:30px;width:30px;position:absolute;left:677px;top:135px;"></div>
+          <div class="divButton" id="taustaVärv" onclick="quiz(this)" style="height:30px;width:30px;position:absolute;left:731px;top:135px;"></div>
+          <div class="divButton" id="äärised" onclick="quiz(this)" style="height:30px;width:30px;position:absolute;left:773px;top:135px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="question">
+          <img src="./images/happy.png" alt="Happy" id="happy">
+          <img src="./images/sad.png" alt="Sad" id="sad">
+          <div class="qBox" id="qBox"></div>
+          <button type="button" class="button_1" name="nextButton" id="nextButton" onclick="quiz(this)"></button>
+          <button type="button" class="button_1" name="endModalButton" id="endModalButton" onclick="openEndModal()"></button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+      </div>
+    </footer>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="startModal" role="dialog" data-backdrop="false">
+        <div class="modal-dialog">
+           <div class="modal-dialog modal-dialog-centered" role="document">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="col-12 modal-title text-center">Ülesanne</h4>
+            </div>
+            <div class="modal-body text-center">
+              <p>Vali menüüribalt õige nupp!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="modalButton" class="col-3 btn btn-outline-secondary" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="endModal" role="dialog" data-backdrop="false">
+      <div class="modal-dialog">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="col-12 modal-title text-center"></h4>
+          </div>
+          <div class="modal-body text-center">
+            <p>Tubli, sa vastasid kõigile küsimustele õigesti!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="modalButton" class="col-3 btn btn-outline-secondary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  </body>
+
+</html>
