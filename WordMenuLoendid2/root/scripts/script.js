@@ -74,6 +74,9 @@ function quiz(obj) {
   } else if( obj.id !== questions[counter].answer){
     document.getElementById("qBox").style.border = "1px solid #cccccc";
     document.getElementById("sad").style.visibility = "visible";
+    document.getElementById("happy").style.visibility = "hidden";
+    document.getElementById("nextButton").style.backgroundImage = "url(./images/check.png)";
+    document.getElementById("nextButton").disabled = true;
   }
 }
 
